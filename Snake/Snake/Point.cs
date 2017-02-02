@@ -42,11 +42,11 @@ namespace Snake
             }
             else if(direction == Direction.UP)
             {
-                y = y + offset;
+                y = y - offset;
             }
             else if(direction == Direction.DOWN)
             {
-                y = y - offset;
+                y = y + offset;
             }
         }
 
@@ -56,7 +56,7 @@ namespace Snake
             Console.Write(sym);
         }
 
-        public void Clear()
+        public void Clear() //Удаление хвоста при движении 
         {
             sym = ' ';
             Draw();
